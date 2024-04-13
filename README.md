@@ -4,38 +4,29 @@
 
 # Project Title
 
-A brief description of what this project does - Problem Statement you're trying to solve!
+Highway Traffic Forecasting: ML-Powered Traffic Volume Prediction
 
 
 ## Implementation Details
 
-- Dataset: California Housing Dataset (view below for more details)
-- Model: [Linear Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
-- Input: 8 features - Median Houshold income, House Area, ...
-- Output: House Price
+- Dataset: Metro Interstate Traffic Volume Dataset (view below for more details)
+- Model: [HistGradientBoostingRegressor]('https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html')
+- Input: 8 features - Holiday, Temp, Weather Description ...
+- Output: Traffic Volume
 
 ## Dataset Details
 
-This dataset was obtained from the StatLib repository ([Link](https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html))
+[This dataset was obtained from this repository](https://archive.ics.uci.edu/ml/datasets/Metro+Interstate+Traffic+Volume
+)
 
-This dataset was derived from the 1990 U.S. census, using one row per census block group. A block group is the smallest geographical unit for which the U.S. Census Bureau publishes sample data (a block group typically has a population of 600 to 3,000 people).
+Metro Interstate Traffic Volume  dataset is a collection of traffic volume data observed on a section of interstate highway in the Minneapolis-St Paul metropolitan area in Minnesota, USA. This dataset includes hourly traffic volume measurements along with corresponding attributes such as date, time, weather conditions, and holiday indicators. The data spans from 2012 to 2018, providing a comprehensive view of traffic patterns over several years. This dataset is valuable for studying and predicting traffic volume fluctuations based on various factors, making it suitable for machine learning tasks such as regression and time series analysis.
 
-A household is a group of people residing within a home. Since the average number of rooms and bedrooms in this dataset are provided per household, these columns may take surprisingly large values for block groups with few households and many empty houses, such as vacation resorts.
+### Varibles Table of the above dataset
+ ![alt text](https://github.com/vasanthgx/traffic_volume/blob/main/images/dataset1.png)
 
-It can be downloaded/loaded using the sklearn.datasets.fetch_california_housing function.
+### Additional Variable Information
+ ![alt text](https://github.com/vasanthgx/traffic_volume/blob/main/images/dataset2.png)
 
-- [California Housing Dataset in Sklearn Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html)
-- 20640 samples
-- 8 Input Features: 
-    - MedInc median income in block group
-    - HouseAge median house age in block group
-    - AveRooms average number of rooms per household
-    - AveBedrms average number of bedrooms per household
-    - Population block group population
-    - AveOccup average number of household members
-    - Latitude block group latitude
-    - Longitude block group longitude
-- Target: Median house value for California districts, expressed in hundreds of thousands of dollars ($100,000)
 
 ## Evaluation and Results
 ![alt text](https://github.com/123ofai/Demo-Project-Repo/blob/main/results/test.png)
