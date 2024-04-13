@@ -22,10 +22,10 @@ Highway Traffic Forecasting: ML-Powered Traffic Volume Prediction
 Metro Interstate Traffic Volume  dataset is a collection of traffic volume data observed on a section of interstate highway in the Minneapolis-St Paul metropolitan area in Minnesota, USA. This dataset includes hourly traffic volume measurements along with corresponding attributes such as date, time, weather conditions, and holiday indicators. The data spans from 2012 to 2018, providing a comprehensive view of traffic patterns over several years. This dataset is valuable for studying and predicting traffic volume fluctuations based on various factors, making it suitable for machine learning tasks such as regression and time series analysis.
 
 ### Varibles Table of the above dataset
- ![alt text](https://github.com/vasanthgx/traffic_volume/blob/main/images/dataset1.png)
+ ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/dataset1.png)
 
 ### Additional Variable Information
- ![alt text](https://github.com/vasanthgx/traffic_volume/blob/main/images/dataset2.png)
+ ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/dataset2.png)
 
 
 ## Evaluation and Results
