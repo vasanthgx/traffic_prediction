@@ -302,7 +302,6 @@ By implementing these strategies, you can improve the generalization performance
 
 ## Acknowledgements
 
-All the links, blogs, videos, papers you referred to/took inspiration from for building this project. 
 
  - [Metro Interstate Traffic](https://www.kaggle.com/datasets/rgupta12/metro-interstate-traffic-volume/code)
  - [Finding indicators for high traffic volume](https://www.kaggle.com/code/roberttareen/finding-indicators-for-high-traffic-on-i-94)
