@@ -165,20 +165,20 @@ In summary, feature importance and selection with Random Forest Regressor involv
 
 ## Model Development
 
-- we will select the top 7 features that we got from the Random Forest Regressor
+- **we will select just the top 7 features that we got from the Random Forest Regressor**
     ```
     important_features = [ 'hour','temp','weekday','day_section_night','month', 'year','clouds_all']
     ```
 - Splitting the dataset into training and **validation set**. This validation set is to test our model internally before submitting it to the test set
     - *Note : we have already been provided the test data set for the hackathon*
 
-- Scaling : we do the scaling of the data using the StandardScaler() function from sklearn
+- **Scaling : we do the scaling of the data using the StandardScaler() function from sklearn**
 
-- Experimenting with different models , so that we can select the best model for our submision
+- **Experimenting with different models , so that we can select the best model for our submision**
 
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/experimenting_models.png)
 
-- Selecting the best model
+- **Selecting the best model**
     ```
     regrh = HistGradientBoostingRegressor(random_state=32)
     regrh.fit(x_train_scaled, y_train)
@@ -188,8 +188,8 @@ In summary, feature importance and selection with Random Forest Regressor involv
 
 ## Testing and Creating Output CSV
 
-- we repeat the same process of data cleaing, pre processing, scaling etc with the test data.
-- finally we submit the submission file.
+- **we repeat the same process of data cleaing, pre processing, scaling etc with the test data.**
+- **finally we submit the submission file.**
 
 
 ## Key Takeaways
@@ -242,7 +242,7 @@ The next steps would be
 
 #### How does the HistGradientBoostingRegressor model work ?
 
-HistGradientBoostingRegressor is a gradient boosting machine learning algorithm introduced in scikit-learn. 
+[HistGradientBoostingRegressor is a gradient boosting machine learning algorithm introduced in scikit-learn.](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html)
 
 1. **Histogram-based Approach**: Unlike traditional gradient boosting methods, HistGradientBoostingRegressor operates on histograms of the features, which improves computational efficiency, especially for large datasets.
 
