@@ -149,6 +149,8 @@ Metro Interstate Traffic Volume  dataset is a collection of traffic volume data 
     ```
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/correlation_graph_after_feature_engineering.png)
 
+![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/caption.png)
+
 ## Feature Importance and Selection Using Random Forest Regressor
 
 Feature importance and selection with the Random Forest Regressor involve identifying the most influential features in predicting the target variable.
