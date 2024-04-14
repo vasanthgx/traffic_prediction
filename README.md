@@ -83,35 +83,35 @@ Metro Interstate Traffic Volume  dataset is a collection of traffic volume data 
 
 ## Data Cleaning and Pre Processing
 - **Pre-processing (Cleaning): Address missing (NULL) values - drop or imputation.**
-    - we will use the ffill() method
+    - **we will use the ffill() method**
     ```
     data.ffill(inplace = True)
     ```
 	
-- Since we have already seen poor reperesentation of 'snow_1h' and 'rain_1h', and similarity between weather_main and  'weather_description' we will drop the three features for the model.
+- **Since we have already seen poor reperesentation of 'snow_1h' and 'rain_1h', and similarity between weather_main and  'weather_description' we will drop the three features for the model.**
     ```
     data1 = data.drop(['snow_1h', 'rain_1h','weather_description'] , axis =1)
     ```
-- Converting 'holiday' feature into just holiday and 'unknown'.
+- **Converting 'holiday' feature into just holiday and 'unknown'.**
     ```
     data1['holiday'] = data1['holiday'].apply(lambda x: 'unknown' if pd.isna(x) else 'holiday' ) 
     ```
-- Next we will first convert the 'date_time' feature into a pandas datetime object.
+- **Next we will first convert the 'date_time' feature into a pandas datetime object.**
     ```
     data1['date_time'] = pd.to_datetime(data1['date_time'], format = '%d-%m-%Y %H:%M')
     ```
-- We now extract the 'year', 'month', 'weekday' and 'hour' from the datetime object.
+- **We now extract the 'year', 'month', 'weekday' and 'hour' from the datetime object.**
     ```
     data1['year'] = data1['date_time'].dt.year
     data1['month'] = data1['date_time'].dt.month
     data1['weekday'] = data1['date_time'].dt.weekday
     data1['hour'] = data1['date_time'].dt.hour
     ```
-- Next we will now divide the 24 hours of the day into before_sunrise, after_sunrise, afternoon and night categories.
+- **Next we will now divide the 24 hours of the day into 'before_sunrise', 'after_sunrise', 'afternoon' and 'night' categories.**
     ```
     data1['hour'].unique()
     ```
-- We will create a function ,which will split the hours into the 4 categories.
+- **We will create a function ,which will split the hours into the above four categories.**
     ```
     def day_category(hour):
         day_section = ''
@@ -125,20 +125,20 @@ Metro Interstate Traffic Volume  dataset is a collection of traffic volume data 
             day_section = 'night'
         return day_section
     ```
-- Using the map() function to loop through the 'hour' feature and based on the hour - value we will allot the 4 day-sections. This way we will create one more feature 'day_section' in our existing dataset.
+- **Using the map() function to loop through the 'hour' feature and based on the hour - value we will allot the 4 day-sections. This way we will create one more feature 'day_section' in our existing dataset.**
     ```
     data1['day_section'] = data1['hour'].map(day_category)
     ```
-- Next we use the pd.get_dummies function to do one hot encoding of the categorical features 'holiday', 'weather_main' and day section.
+- **Next we use the pd.get_dummies function to do one hot encoding of the categorical features 'holiday', 'weather_main' and 'day section'.**
     ```
     data1 = pd.get_dummies(data1, columns =['holiday', 'weather_main','day_section'])
     ```
-- Finally we set the feature 'date_time' as row index in our dataset.
+- **Finally we set the feature 'date_time' as row index in our dataset.**
     ```
     data1.set_index('date_time',inplace = True)
     ```
 ### Correlation testing - second time
-- After the above feature engineering. 
+- **After the above feature engineering.**
 
     ```
     corr_data1 = data1.corr()
