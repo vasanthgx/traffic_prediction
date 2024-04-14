@@ -54,7 +54,7 @@ Metro Interstate Traffic Volume  dataset is a collection of traffic volume data 
 
 - Let us further explore the data distribution of each of the 4 numerical features plus the target of the data 'traffic_volume'.
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/trafficVol_temp_univariate.png)
-![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/rain_snow.png)
+![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/rain_snow_graph.png)
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/clouds_all_univariate.png)
 **We can clearly see from the above graphs, there is poor representation of rain_1h and snow_1h in the dataset**
 
