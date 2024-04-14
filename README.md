@@ -1,6 +1,6 @@
 
 
-![logo](https://github.com/vasanthgx/regularisation_in_ml/blob/main/images/hacklogo.gif)
+![logo](https://github.com/vasanthgx/traffic_prediction/blob/main/images/hacklogo.gif)
 
 
 # Project Title
