@@ -59,13 +59,15 @@ Metro Interstate Traffic Volume  dataset is a collection of traffic volume data 
 **We can clearly see from the above graphs, there is poor representation of rain_1h and snow_1h in the dataset**
 
 - Next we will explore the Categorical features 'holiday', and 'weather_main'.
+
+
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/holiday_graph.png)
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/trafficVol_temp_univariate.png)
 
 ### Visualization - Bivariate analysis
 
 - Clouds All feature vs Traffic Volume
-![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/clouds_all_vs_traffic_volume_graph)
+![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/clouds_all_vs_traffic_volume_graph.png)
 
 - Weather Main feature vs Traffic Volume
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/weather_main_vs_traffic_volume_graph.png)
@@ -169,6 +171,7 @@ In summary, feature importance and selection with Random Forest Regressor involv
 - Scaling : we do the scaling of the data using the StandardScaler() function from sklearn
 
 - Experimenting with different models
+
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/experimenting_models.png)
 
 - Selecting the best model
