@@ -240,7 +240,7 @@ The next steps would be
 
 ## FAQ
 
-#### How does the HistGradientBoostingRegressor model work ?
+### 1) How does the HistGradientBoostingRegressor model work ?
 
 [HistGradientBoostingRegressor is a gradient boosting machine learning algorithm introduced in scikit-learn.](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html)
 
@@ -258,7 +258,7 @@ The next steps would be
 
 Overall, HistGradientBoostingRegressor combines the benefits of histogram-based techniques with the power of gradient boosting, resulting in a highly efficient and scalable algorithm for regression tasks.
 
-#### How do you train the model on a new dataset?
+### 2) How do you train the model on a new dataset?
 
 To train the `HistGradientBoostingRegressor` model on a new dataset, you need to follow these general steps:
 
@@ -277,7 +277,7 @@ To train the `HistGradientBoostingRegressor` model on a new dataset, you need to
 
 Adjust the code according to your specific dataset and requirements. Ensure proper data preprocessing, hyperparameter tuning, and evaluation for optimal model performance.
 
-#### How to you improve make the model more generalized ?
+### 3) How to you improve make the model more generalized ?
 
 To improve the generalization of a machine learning model, including the `HistGradientBoostingRegressor`, you can consider several strategies:
 
