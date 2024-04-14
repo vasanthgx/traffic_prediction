@@ -79,8 +79,10 @@ Metro Interstate Traffic Volume  dataset is a collection of traffic volume data 
 
 ![alt text](https://github.com/vasanthgx/traffic_prediction/blob/main/images/correlation_graph_initial_dataset.png)
 
+**As we can see, there is no strong correlation between the features**
+
 ## Data Cleaning and Pre Processing
-- Pre-processing (Cleaning): Address missing (NULL) values - drop or imputation.
+- **Pre-processing (Cleaning): Address missing (NULL) values - drop or imputation.**
     - we will use the ffill() method
     ```
     data.ffill(inplace = True)
